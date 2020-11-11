@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/fondo2"
+    tools:context=".Alumnos.Alumnos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="REGISTRAR ALUMNOS"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtID_Curso"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:onClick="Buscar"
+            android:drawableLeft="@drawable/ic_action_buscar"
+            app:backgroundTint="@color/cardview_shadow_end_color"
+            android:text="Buscar" />
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Ingrese Nombre"
+
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Ingrese Apellido"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Ingrese Direccion"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:hint="Ingrese Telefono"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Ingrese Edad"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:text="REGISTRAR" />
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Modificar"
+            app:backgroundTint="@color/purple_700"
+            android:text="MODIFICAR" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:onClick="Eliminar"
+            android:text="ELIMINAR" />
+
+        <Button
+
+            android:id="@+id/btnMostrarAlumno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:onClick="Lista"
+            android:text="REPORTE" />
+
+    </LinearLayout>
+</RelativeLayout>

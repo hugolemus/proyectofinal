@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    android:padding="32dp"
+    tools:context=".Seccion.Seccion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="GESTION DE SECCIONES"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edtIdSeccion"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:ems="10"
+            android:hint="Identificador"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/ic_action_buscar"
+            android:onClick="Buscar"
+            android:text="Buscar"
+            app:backgroundTint="@color/cardview_shadow_end_color"
+            app:iconTint="@color/white" />
+
+        <EditText
+            android:id="@+id/edtSeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Ingrese Seccion"
+            android:inputType="textPersonName"
+            />
+        <Button
+            android:onClick="onClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:text="AGREGAR" />
+
+        <Button
+            android:id="@+id/btnEditarSeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:onClick="Modificar"
+            android:text="EDITAR" />
+
+        <Button
+            android:id="@+id/btnEliminarSeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:onClick="Eliminar"
+            android:text="ELIMINAR" />
+
+        <Button
+            android:id="@+id/btnMostrarSeccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/purple_700"
+            android:onClick="Lista"
+            android:text="MOSTRAR" />
+    </LinearLayout>
+
+
+</RelativeLayout>
